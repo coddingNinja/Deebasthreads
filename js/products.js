@@ -13,7 +13,7 @@ const products = [
         id: 2,
         name: "Elegant Handmade Crossbody Bag",
         price: 5000,
-        image: "images/product__2.png",
+        image: "images/product_2.png",
         category: "Crossbody Bags",
         description: "A stylish handmade crossbody bag featuring elegant design and craftsmanship. Perfect for hands-free convenience with adjustable strap. Compact yet spacious enough for essentials.",
         inStock: true
