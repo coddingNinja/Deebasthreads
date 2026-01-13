@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Deeba's Thread</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    
+    <main>
+        <section class="section">
+            <div class="container">
+                <div id="product-detail-container">
+                    <!-- Product details will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/products.js?v=2"></script>
+    <script src="js/main.js?v=2"></script>
+    <script>
+        // Display product details
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            
+            if (!productId) {
+                window.location.href = 'products.html';
+                return;
+            }
+            
+            const product = getProductById(productId);
+            const container = document.getElementById('product-detail-container');
+            
+            if (!product) {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 4rem;">
+                        <h2>Product not found</h2>
+                        <p>The product you're looking for doesn't exist.</p>
+                        <a href="products.html" class="btn">Back to Products</a>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Update page title
+            document.title = `${product.name} - Deeba's Thread`;
+            
+            container.innerHTML = `
+                <div class="product-detail">
+                    <img src="${product.image}" alt="${product.name}" class="product-detail-image">
+                    <div class="product-detail-info">
+                        <h1>${product.name}</h1>
+                        <p class="product-detail-price">${formatPrice(product.price)}</p>
+                        <p class="product-detail-description">${product.description}</p>
+                        
+                        <div class="customization-info">
+                            <h3>✨ Handmade & Customizable</h3>
+                            <p>This bag is lovingly handcrafted with attention to detail and premium materials. Each piece is unique and can be customized according to your preferences.</p>
+                            <ul class="customization-features">
+                                <li>✓ 100% Handmade with care</li>
+                                <li>✓ Fully customizable design</li>
+                                <li>✓ Premium quality materials</li>
+                                <li>✓ Made to order</li>
+                            </ul>
+                            <p class="customization-note">Contact us via WhatsApp to discuss your customization preferences, including size, color, and design details.</p>
+                        </div>
+                        
+                        <p class="stock-status ${product.inStock ? 'in-stock' : 'out-of-stock'}">
+                            ${product.inStock ? '✓ Available for Order' : '✗ Out of Stock'}
+                        </p>
+                        
+                        <button class="btn btn-whatsapp" ${!product.inStock ? 'disabled' : ''} id="whatsapp-order-btn" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                            ${product.inStock ? '📱 Order on WhatsApp' : 'Out of Stock'}
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="related-products-section">
+                    <h2 class="section-title">You May Also Like</h2>
+                    <div class="related-products-list" id="related-products">
+                        <!-- Related products will be loaded here -->
+                    </div>
+                </div>
+            `;
+            
+            // WhatsApp order button functionality
+            const whatsappBtn = document.getElementById('whatsapp-order-btn');
+            if (whatsappBtn && product.inStock) {
+                whatsappBtn.addEventListener('click', function() {
+                    orderOnWhatsApp(product.id, product.name);
+                });
+            }
+            
+            // Load related products (random products excluding current one)
+            const relatedContainer = document.getElementById('related-products');
+            if (relatedContainer) {
+                const relatedProducts = products
+                    .filter(p => p.id !== product.id)
+                    .sort(() => Math.random() - 0.5)
+                    .slice(0, 4); // Show 4 random related products
+                
+                relatedProducts.forEach(relatedProduct => {
+                    const productCard = document.createElement('a');
+                    productCard.href = `product.html?id=${relatedProduct.id}`;
+                    productCard.className = 'product-card';
+                    productCard.innerHTML = `
+                        <img src="${relatedProduct.image}" alt="${relatedProduct.name}" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">${relatedProduct.name}</h3>
+                            <p class="product-category">${relatedProduct.category}</p>
+                            <p class="product-price">${formatPrice(relatedProduct.price)}</p>
+                        </div>
+                    `;
+                    relatedContainer.appendChild(productCard);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

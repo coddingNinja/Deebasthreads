@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Deeba's Thread</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Our Collection</h1>
+                <div class="products-grid" id="products-container">
+                    <!-- Products will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/products.js?v=2"></script>
+    <script src="js/main.js?v=2"></script>
+    <script>
+        // Display all products on products page
+        document.addEventListener('DOMContentLoaded', function() {
+            const productsContainer = document.getElementById('products-container');
+            if (productsContainer) {
+                products.forEach(product => {
+                    const productCard = document.createElement('a');
+                    productCard.href = `product.html?id=${product.id}`;
+                    productCard.className = 'product-card';
+                    productCard.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">${product.name}</h3>
+                            <p class="product-category">${product.category}</p>
+                            <p class="product-price">${formatPrice(product.price)}</p>
+                        </div>
+                    `;
+                    productsContainer.appendChild(productCard);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deeba's Thread - Elegant Fashion for Every Occasion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Deeba's Thread</h1>
+            <p>Handcrafted bags with timeless elegance and modern sophistication</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Collection</h2>
+                <div class="products-grid" id="featured-products">
+                    <!-- Products will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: var(--light-bg);">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Our Story</h2>
+                    <p>Deeba's Thread represents a commitment to quality, elegance, and timeless craftsmanship. Each handmade bag in our collection is carefully crafted with attention to detail, blending classic designs with modern sensibilities.</p>
+                    <p>We believe that every bag should be both beautiful and functional, allowing you to express your unique style with confidence and grace. Every piece is handcrafted with love and dedication.</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/products.js?v=2"></script>
+    <script src="js/main.js?v=2"></script>
+    <script>
+        // Display featured products on home page
+        document.addEventListener('DOMContentLoaded', function () {
+            const featuredContainer = document.getElementById('featured-products');
+            if (featuredContainer) {
+                // Show first 6 products as featured
+                const featuredProducts = products.slice(0, 6);
+                featuredProducts.forEach(product => {
+                    const productCard = document.createElement('a');
+                    productCard.href = `product.html?id=${product.id}`;
+                    productCard.className = 'product-card';
+                    productCard.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">${product.name}</h3>
+                            <p class="product-category">${product.category}</p>
+                            <p class="product-price">${formatPrice(product.price)}</p>
+                        </div>
+                    `;
+                    featuredContainer.appendChild(productCard);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
