@@ -22,7 +22,7 @@ const products = [
         id: 3,
         name: "Premium Handmade Shoulder Bag",
         price: 5000,
-        image: "images/product__1.png",
+        image: "images/product_3.jpeg",
         category: "Shoulder Bags",
         description: "A sophisticated handmade shoulder bag with timeless appeal. Crafted with care and precision, featuring multiple compartments and comfortable shoulder strap. Perfect for work or special occasions.",
         inStock: true
