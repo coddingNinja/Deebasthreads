@@ -85,7 +85,7 @@ body {
     width: auto;
     object-fit: contain;
     transition: var(--transition);
-    border-radius: 50%;
+    border-radius: 10%;
     filter: grayscale(100%);
 }
 
