@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <link rel="icon" href="/images/logo.jpeg" type="image/jpeg">
 
 </head>
+
 <body>
     <div id="nav-placeholder"></div>
-    
+
     <main>
         <section class="section">
             <div class="container">
@@ -27,18 +29,18 @@
     <script src="js/main.js?v=2"></script>
     <script>
         // Display product details
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);
             const productId = urlParams.get('id');
-            
+
             if (!productId) {
                 window.location.href = 'products.html';
                 return;
             }
-            
+
             const product = getProductById(productId);
             const container = document.getElementById('product-detail-container');
-            
+
             if (!product) {
                 container.innerHTML = `
                     <div style="text-align: center; padding: 4rem;">
@@ -49,10 +51,11 @@
                 `;
                 return;
             }
-            
-            // Update page title
+
             document.title = `${product.name} - Deeba's Thread`;
-            
+            console.log(document.title);
+            // document.title = product.name;
+
             container.innerHTML = `
                 <div class="product-detail">
                     <img src="${product.image}" alt="${product.name}" class="product-detail-image">
@@ -90,15 +93,15 @@
                     </div>
                 </div>
             `;
-            
+
             // WhatsApp order button functionality
             const whatsappBtn = document.getElementById('whatsapp-order-btn');
             if (whatsappBtn && product.inStock) {
-                whatsappBtn.addEventListener('click', function() {
+                whatsappBtn.addEventListener('click', function () {
                     orderOnWhatsApp(product.id, product.name);
                 });
             }
-            
+
             // Load related products (random products excluding current one)
             const relatedContainer = document.getElementById('related-products');
             if (relatedContainer) {
@@ -106,7 +109,7 @@
                     .filter(p => p.id !== product.id)
                     .sort(() => Math.random() - 0.5)
                     .slice(0, 4); // Show 4 random related products
-                
+
                 relatedProducts.forEach(relatedProduct => {
                     const productCard = document.createElement('a');
                     productCard.href = `product.html?id=${relatedProduct.id}`;
@@ -125,4 +128,5 @@
         });
     </script>
 </body>
+
 </html>
