@@ -54,7 +54,7 @@
                 const featuredProducts = products.slice(0, 6);
                 featuredProducts.forEach(product => {
                     const productCard = document.createElement('a');
-                    productCard.href = `product.html?slug=${product.slug}`;
+                    productCard.href = `/products/${product.slug}`;
                     productCard.className = 'product-card';
                     productCard.innerHTML = `
                         <img src="${product.image}" alt="${product.name}" class="product-image">

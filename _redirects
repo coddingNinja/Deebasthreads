@@ -1,1 +1,2 @@
 /products/*   /product.html?slug=:splat   200
+/product.html?slug=*   /products/:splat   301

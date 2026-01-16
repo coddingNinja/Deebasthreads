@@ -30,11 +30,21 @@
     <script>
         // Display product details
         document.addEventListener('DOMContentLoaded', function () {
-            const urlParams = new URLSearchParams(window.location.search);
-            const productSlug = urlParams.get('slug');
+            // Get slug from URL path or query parameter
+            let productSlug = null;
+            
+            // Check if we're on a clean URL path like /products/slug
+            const pathMatch = window.location.pathname.match(/\/products\/([^\/]+)/);
+            if (pathMatch) {
+                productSlug = pathMatch[1];
+            } else {
+                // Fallback to query parameter
+                const urlParams = new URLSearchParams(window.location.search);
+                productSlug = urlParams.get('slug');
+            }
 
             if (!productSlug) {
-                window.location.href = 'products.html';
+                window.location.href = '/products.html';
                 return;
             }
 
@@ -112,7 +122,7 @@
 
                 relatedProducts.forEach(relatedProduct => {
                     const productCard = document.createElement('a');
-                    productCard.href = `product.html?slug=${relatedProduct.slug}`;
+                    productCard.href = `/products/${relatedProduct.slug}`;
                     productCard.className = 'product-card';
                     productCard.innerHTML = `
                         <img src="${relatedProduct.image}" alt="${relatedProduct.name}" class="product-image">
