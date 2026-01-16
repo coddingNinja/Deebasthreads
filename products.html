@@ -33,7 +33,7 @@
             if (productsContainer) {
                 products.forEach(product => {
                     const productCard = document.createElement('a');
-                    productCard.href = `product.html?id=${product.id}`;
+                    productCard.href = `product.html?slug=${product.slug}`;
                     productCard.className = 'product-card';
                     productCard.innerHTML = `
                         <img src="${product.image}" alt="${product.name}" class="product-image">

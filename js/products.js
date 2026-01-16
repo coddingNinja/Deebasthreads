@@ -2,6 +2,7 @@
 const products = [
     {
         id: 1,
+        slug: "classic-handmade-tote-bag",
         name: "Classic Handmade Tote Bag",
         price: 5000,
         image: "images/product__1.png",
@@ -11,6 +12,7 @@ const products = [
     },
     {
         id: 2,
+        slug: "elegant-handmade-crossbody-bag",
         name: "Elegant Handmade Crossbody Bag",
         price: 5000,
         image: "images/product_2.png",
@@ -20,6 +22,7 @@ const products = [
     },
     {
         id: 3,
+        slug: "premium-handmade-shoulder-bag",
         name: "Premium Handmade Shoulder Bag",
         price: 5000,
         image: "images/product_3.jpeg",
@@ -29,6 +32,7 @@ const products = [
     },
     {
         id: 4,
+        slug: "artisan-handmade-clutch-bag",
         name: "Artisan Handmade Clutch Bag",
         price: 5000,
         image: "images/product_4.jpeg",
@@ -38,6 +42,7 @@ const products = [
     },
     {
         id: 5,
+        slug: "handmade-messenger-bag",
         name: "Handmade Messenger Bag",
         price: 5000,
         image: "images/product_5.png",
@@ -47,6 +52,7 @@ const products = [
     },
     {
         id: 6,
+        slug: "designer-handmade-hobo-bag",
         name: "Designer Handmade Hobo Bag",
         price: 5000,
         image: "images/product_6.png",
@@ -56,6 +62,7 @@ const products = [
     },
     {
         id: 7,
+        slug: "handmade-satchel-bag",
         name: "Handmade Satchel Bag",
         price: 5000,
         image: "images/product_7.png",
@@ -65,6 +72,7 @@ const products = [
     },
     {
         id: 8,
+        slug: "elegant-handmade-evening-bag",
         name: "Elegant Handmade Evening Bag",
         price: 5000,
         image: "images/product_8.jpeg",
@@ -74,6 +82,7 @@ const products = [
     },
     {
         id: 9,
+        slug: "handmade-backpack-bag",
         name: "Handmade Backpack Bag",
         price: 5000,
         image: "images/product_9.png",
@@ -87,7 +96,10 @@ const products = [
 function getProductById(id) {
     return products.find(product => product.id === parseInt(id));
 }
-
+// Function to get product by slug
+function getProductBySlug(slug) {
+    return products.find(product => product.slug === slug);
+}
 // Function to get products by category
 function getProductsByCategory(category) {
     return products.filter(product => product.category === category);

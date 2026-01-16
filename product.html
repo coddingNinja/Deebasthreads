@@ -17,7 +17,7 @@
         <section class="section">
             <div class="container">
                 <div id="product-detail-container">
-                    <!-- Product details will be dynamically loaded here -->
+                   
                 </div>
             </div>
         </section>
@@ -31,14 +31,14 @@
         // Display product details
         document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);
-            const productId = urlParams.get('id');
+            const productSlug = urlParams.get('slug');
 
-            if (!productId) {
+            if (!productSlug) {
                 window.location.href = 'products.html';
                 return;
             }
 
-            const product = getProductById(productId);
+            const product = getProductBySlug(productSlug);
             const container = document.getElementById('product-detail-container');
 
             if (!product) {
@@ -112,7 +112,7 @@
 
                 relatedProducts.forEach(relatedProduct => {
                     const productCard = document.createElement('a');
-                    productCard.href = `product.html?id=${relatedProduct.id}`;
+                    productCard.href = `product.html?slug=${relatedProduct.slug}`;
                     productCard.className = 'product-card';
                     productCard.innerHTML = `
                         <img src="${relatedProduct.image}" alt="${relatedProduct.name}" class="product-image">
