@@ -2,8 +2,8 @@
 const products = [
     {
         id: 1,
-        slug: "classic-handmade-tote-bag",
-        name: "Classic Handmade Tote Bag",
+        slug: "offwhite-bead-bag",
+        name: "Offwhite bead bag",
         price: 5000,
         image: "images/product__1.png",
         category: "Tote Bags",
@@ -12,9 +12,9 @@ const products = [
     },
     {
         id: 2,
-        slug: "elegant-handmade-crossbody-bag",
-        name: "Elegant Handmade Crossbody Bag",
-        price: 5000,
+        slug: "multi-bead-bag",
+        name: "Multi bead bag",
+        price: 6000,
         image: "images/product_2.png",
         category: "Crossbody Bags",
         description: "A stylish handmade crossbody bag featuring elegant design and craftsmanship. Perfect for hands-free convenience with adjustable strap. Compact yet spacious enough for essentials.",
@@ -22,9 +22,9 @@ const products = [
     },
     {
         id: 3,
-        slug: "premium-handmade-shoulder-bag",
-        name: "Premium Handmade Shoulder Bag",
-        price: 5000,
+        slug: "black-potli-bag-with-extra-cross-body-strap",
+        name: "Black potli bag with extra cross body strap",
+        price:10000,
         image: "images/product_3.jpeg",
         category: "Shoulder Bags",
         description: "A sophisticated handmade shoulder bag with timeless appeal. Crafted with care and precision, featuring multiple compartments and comfortable shoulder strap. Perfect for work or special occasions.",
