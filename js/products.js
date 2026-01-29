@@ -94,7 +94,7 @@ const products = [
         id: 10,
         slug: "mehroon-bead-bag",
         name: "Mehroon bead bag",
-        price: 4000,
+        price: 5000,
         image: "images/product_10.png",
         category: "Backpacks",
         description: "A stylish handmade backpack combining fashion and function. Comfortable padded straps, multiple compartments, and durable construction. Perfect for daily use or travel.",
