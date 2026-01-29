@@ -12,8 +12,8 @@ const products = [
     },
     {
         id: 2,
-        slug: "multi-bead-bag",
-        name: "Multi bead bag.",
+        slug: "multi-bead-bag-.",
+        name: "Multi bead bag .",
         price: 6000,
         image: "images/product_2.png",
         category: "Bead Bags",
@@ -63,7 +63,7 @@ const products = [
     {
         id: 7,
         slug: "heart-shape-bead-bag",
-        name: "Heart shape bead bag .",
+        name: "Heart shape bead bag",
         price: 7000,
         image: "images/product_7.png",
         category: "Bead Bags",
