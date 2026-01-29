@@ -408,6 +408,13 @@ main {
     margin-bottom: 0.5rem;
     color: var(--primary-color);
     font-weight: 500;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  line-clamp: 2;          /* standard (for future / linter) */
+  -webkit-line-clamp: 2;  /* current real-world support */
+
+  overflow: hidden;
 }
 
 .product-category {
