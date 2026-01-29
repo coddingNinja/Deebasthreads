@@ -411,8 +411,8 @@ main {
     display: -webkit-box;
   -webkit-box-orient: vertical;
 
-  line-clamp: 2;          /* standard (for future / linter) */
-  -webkit-line-clamp: 2;  /* current real-world support */
+  line-clamp: 1;          /* standard (for future / linter) */
+  -webkit-line-clamp: 1;  /* current real-world support */
 
   overflow: hidden;
 }
