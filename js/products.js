@@ -1,4 +1,4 @@
-// Products data array for Deeba's Thread - Handmade Bags
+// Products data array for Deeba's Thread - Handmade Bead Bags
 const products = [
     {
         id: 1,
@@ -6,8 +6,8 @@ const products = [
         name: "Offwhite bead bag",
         price: 5000,
         image: "images/product__1.png",
-        category: "Tote Bags",
-        description: "A beautifully crafted handmade tote bag perfect for everyday use. Made with premium materials and attention to detail. Spacious interior with sturdy handles, ideal for shopping, work, or casual outings.",
+        category: "Bead Bags",
+        description: "An elegant handmade offwhite bead bag crafted with fine-quality beads. Perfect for casual outings and semi-formal occasions, offering a graceful and minimal look.",
         inStock: true
     },
     {
@@ -16,18 +16,18 @@ const products = [
         name: "Multi bead bag",
         price: 6000,
         image: "images/product_2.png",
-        category: "Crossbody Bags",
-        description: "A stylish handmade crossbody bag featuring elegant design and craftsmanship. Perfect for hands-free convenience with adjustable strap. Compact yet spacious enough for essentials.",
+        category: "Bead Bags",
+        description: "A vibrant handmade multi bead bag designed with colorful beads. Stylish and eye-catching, ideal for adding a bold statement to your outfit.",
         inStock: true
     },
     {
         id: 3,
         slug: "black-potli-bag-with-extra-cross-body-strap",
         name: "Black potli bag with extra cross body strap",
-        price:10000,
+        price: 10000,
         image: "images/product_3.jpeg",
-        category: "Shoulder Bags",
-        description: "A sophisticated handmade shoulder bag with timeless appeal. Crafted with care and precision, featuring multiple compartments and comfortable shoulder strap. Perfect for work or special occasions.",
+        category: "Bead Bags",
+        description: "A luxurious handmade black potli bead bag featuring an extra crossbody strap. Perfect for weddings, parties, and formal events with versatile styling options.",
         inStock: true
     },
     {
@@ -36,8 +36,8 @@ const products = [
         name: "Mehroon circle bead bag",
         price: 6000,
         image: "images/product_4.jpeg",
-        category: "Clutch Bags",
-        description: "An elegant handmade clutch bag showcasing fine craftsmanship. Sleek design perfect for evening events, parties, or formal occasions. Features secure closure and premium finish.",
+        category: "Bead Bags",
+        description: "A beautifully handcrafted mehroon circle bead bag with a unique round shape. Ideal for festive wear and special occasions.",
         inStock: true
     },
     {
@@ -46,8 +46,8 @@ const products = [
         name: "Transparrent shaded bead pouch with heart shape front decoration",
         price: 4000,
         image: "images/product_5.png",
-        category: "Messenger Bags",
-        description: "A practical and stylish handmade messenger bag. Features multiple pockets, adjustable strap, and durable construction. Ideal for students, professionals, or daily commutes.",
+        category: "Bead Bags",
+        description: "A charming transparent shaded bead pouch featuring a heart-shaped front decoration. Lightweight, stylish, and perfect for casual or party wear.",
         inStock: true
     },
     {
@@ -56,8 +56,8 @@ const products = [
         name: "Multi bead bag",
         price: 7000,
         image: "images/product_6.png",
-        category: "Hobo Bags",
-        description: "A chic handmade hobo bag with a relaxed, slouchy silhouette. Crafted with premium materials and attention to detail. Comfortable shoulder strap and spacious interior.",
+        category: "Bead Bags",
+        description: "A premium handmade multi bead bag with intricate beadwork. Designed for those who love detailed craftsmanship and elegant fashion.",
         inStock: true
     },
     {
@@ -66,8 +66,8 @@ const products = [
         name: "Heart shape bead bag .",
         price: 7000,
         image: "images/product_7.png",
-        category: "Satchel Bags",
-        description: "A classic handmade satchel bag with structured design. Features top handle and optional shoulder strap. Multiple compartments for organization. Perfect for work or travel.",
+        category: "Bead Bags",
+        description: "A romantic handmade heart-shaped bead bag crafted with precision. Perfect for gifting or styling with festive and party outfits.",
         inStock: true
     },
     {
@@ -76,8 +76,8 @@ const products = [
         name: "Butterfly bead bag",
         price: 4000,
         image: "images/product_8.jpeg",
-        category: "Evening Bags",
-        description: "A sophisticated handmade evening bag for special occasions. Elegant design with premium finish. Compact size perfect for formal events, dinners, or parties.",
+        category: "Bead Bags",
+        description: "A delicate handmade butterfly bead bag featuring artistic bead detailing. Ideal for evening events and special occasions.",
         inStock: true
     },
     {
@@ -86,8 +86,8 @@ const products = [
         name: "Rectangular bead bag .",
         price: 4000,
         image: "images/product_9.png",
-        category: "Backpacks",
-        description: "A stylish handmade backpack combining fashion and function. Comfortable padded straps, multiple compartments, and durable construction. Perfect for daily use or travel.",
+        category: "Bead Bags",
+        description: "A sleek handmade rectangular bead bag with a modern silhouette. Perfect for both casual and formal styling.",
         inStock: true
     },
     {
@@ -96,8 +96,8 @@ const products = [
         name: "Mehroon bead bag",
         price: 5000,
         image: "images/product_10.png",
-        category: "Backpacks",
-        description: "A stylish handmade backpack combining fashion and function. Comfortable padded straps, multiple compartments, and durable construction. Perfect for daily use or travel.",
+        category: "Bead Bags",
+        description: "A classic handmade mehroon bead bag designed for festive and traditional wear. Elegant and timeless in appearance.",
         inStock: true
     },
     {
@@ -106,8 +106,8 @@ const products = [
         name: "Silver potli crossbody bag",
         price: 3000,
         image: "images/product_11.png",
-        category: "Backpacks",
-        description: "A stylish handmade backpack combining fashion and function. Comfortable padded straps, multiple compartments, and durable construction. Perfect for daily use or travel.",
+        category: "Bead Bags",
+        description: "A graceful handmade silver potli bead bag with crossbody styling. Perfect for weddings, formal gatherings, and celebrations.",
         inStock: true
     },
     {
@@ -116,8 +116,8 @@ const products = [
         name: "Golden and black bead bag",
         price: 4000,
         image: "images/product_12.png",
-        category: "Backpacks",
-        description: "A stylish handmade backpack combining fashion and function. Comfortable padded straps, multiple compartments, and durable construction. Perfect for daily use or travel.",
+        category: "Bead Bags",
+        description: "A striking handmade golden and black bead bag combining luxury and elegance. Ideal for evening wear and festive occasions.",
         inStock: true
     },
     {
@@ -126,8 +126,8 @@ const products = [
         name: " heart shape potli bag ",
         price: 3000,
         image: "images/product_13.png",
-        category: "Backpacks",
-        description: "A stylish handmade backpack combining fashion and function. Comfortable padded straps, multiple compartments, and durable construction. Perfect for daily use or travel.",
+        category: "Bead Bags",
+        description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
         inStock: true
     }
 ];
