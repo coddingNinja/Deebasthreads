@@ -95,7 +95,7 @@ const products = [
         slug: "mehroon-bead-bag",
         name: "Mehroon bead bag",
         price: 4000,
-        image: "images/product_9.png",
+        image: "images/product_10.png",
         category: "Backpacks",
         description: "A stylish handmade backpack combining fashion and function. Comfortable padded straps, multiple compartments, and durable construction. Perfect for daily use or travel.",
         inStock: true
@@ -105,7 +105,7 @@ const products = [
         slug: "silver-potli-crossbody-bag",
         name: "Silver potli crossbody bag",
         price: 3000,
-        image: "images/product_9.png",
+        image: "images/product_11.png",
         category: "Backpacks",
         description: "A stylish handmade backpack combining fashion and function. Comfortable padded straps, multiple compartments, and durable construction. Perfect for daily use or travel.",
         inStock: true
@@ -115,7 +115,7 @@ const products = [
         slug: "golden-and-black-bead-bag",
         name: "Golden and black bead bag",
         price: 4000,
-        image: "images/product_9.png",
+        image: "images/product_12.png",
         category: "Backpacks",
         description: "A stylish handmade backpack combining fashion and function. Comfortable padded straps, multiple compartments, and durable construction. Perfect for daily use or travel.",
         inStock: true
@@ -125,7 +125,7 @@ const products = [
         slug: "heart-shape-potli-bag",
         name: " heart shape potli bag ",
         price: 3000,
-        image: "images/product_9.png",
+        image: "images/product_13.png",
         category: "Backpacks",
         description: "A stylish handmade backpack combining fashion and function. Comfortable padded straps, multiple compartments, and durable construction. Perfect for daily use or travel.",
         inStock: true
