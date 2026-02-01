@@ -110,16 +110,16 @@ const products = [
         description: "A graceful handmade silver potli bead bag with crossbody styling. Perfect for weddings, formal gatherings, and celebrations.",
         inStock: true
     },
-    {
-        id: 12,
-        slug: "golden-and-black-bead-bag",
-        name: "Golden and black bead bag",
-        price: 4000,
-        image: "images/product_12.png",
-        category: "Bead Bags",
-        description: "A striking handmade golden and black bead bag combining luxury and elegance. Ideal for evening wear and festive occasions.",
-        inStock: true
-    },
+    // {
+    //     id: 12,
+    //     slug: "golden-and-black-bead-bag",
+    //     name: "Golden and black bead bag",
+    //     price: 4000,
+    //     image: "images/product_12.png",
+    //     category: "Bead Bags",
+    //     description: "A striking handmade golden and black bead bag combining luxury and elegance. Ideal for evening wear and festive occasions.",
+    //     inStock: true
+    // },
     {
         id: 13,
         slug: "heart-shape-potli-bag",
