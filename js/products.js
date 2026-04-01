@@ -132,7 +132,7 @@ const products = [
     },
     {
         id: 14,
-        slug: "heart-shape-potli-bag",
+        slug: "Two-Shades-Crystal-Bag-shape-potli-bag",
         name: " Two Shades Crystal Bag shape potli bag ",
         price: 3000,
         image: "images/product_14.png",
