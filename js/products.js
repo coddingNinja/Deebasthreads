@@ -163,7 +163,7 @@ const products = [
 },
 {
     id: 17,
-    slug: "Multi-Design-Bag ",
+    slug: "Multi-Design-Bag",
     name: "Multi Design Bag ",
     price: 3000,
     image: "images/product_17.jpeg",
