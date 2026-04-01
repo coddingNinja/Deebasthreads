@@ -137,50 +137,49 @@ const products = [
         price: 3000,
         image: "images/product_14.jpeg",
         category: "Bead Bags",
-        description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
+        description: "An elegant two-shade crystal bead potli bag that adds a touch of glamour to any outfit. Perfect for weddings and festive occasions.",
+        inStock: true
+    },
+    {
+        id: 15,
+        slug: "Off-White-Big-Bead-Bag",
+        name: "OffWhite Big Bead Bag ",
+        price: 3000,
+        image: "images/product_15.jpeg",
+        category: "Bead Bags",
+        description: "A classy off-white big bead bag crafted for a sophisticated look. Spacious, stylish, and ideal for formal events.",
+        inStock: true
+    },
+    {
+        id: 16,
+        slug: "Off-White-Big-Bead-Bag-premimum",
+        name: "OffWhite Big Bead Bag ",
+        price: 3000,
+        image: "images/product_16.jpeg",
+        category: "Bead Bags",
+        description: "A premium version of the off-white bead bag featuring refined craftsmanship and a luxurious finish. Perfect for special occasions.",
+        inStock: true
+    },
+    {
+        id: 17,
+        slug: "Multi-Design-Bag",
+        name: "Multi Design Bag ",
+        price: 3000,
+        image: "images/product_17.jpeg",
+        category: "Bead Bags",
+        description: "A vibrant multi-design bead bag that combines different patterns for a unique and trendy look. Great for casual and festive wear.",
+        inStock: true
+    },
+    {
+        id: 18,
+        slug: "Transparent-Bag",
+        name: "Transparent Bag",
+        price: 3000,
+        image: "images/product_18.jpeg",
+        category: "Bead Bags",
+        description: "A modern transparent bead bag designed for a chic and minimal style. Lightweight and perfect for contemporary fashion lovers.",
         inStock: true
     }
-,
-{
-    id: 15,
-    slug: "Off-White-Big-Bead-Bag",
-    name: "OffWhite Big Bead Bag ",
-    price: 3000,
-    image: "images/product_15.jpeg",
-    category: "Bead Bags",
-    description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
-    inStock: true
-},
-{
-    id: 16,
-    slug: "Off-White-Big-Bead-Bag-premimum",
-    name: "OffWhite Big Bead Bag ",
-    price: 3000,
-    image: "images/product_16.jpeg",
-    category: "Bead Bags",
-    description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
-    inStock: true
-},
-{
-    id: 17,
-    slug: "Multi-Design-Bag",
-    name: "Multi Design Bag ",
-    price: 3000,
-    image: "images/product_17.jpeg",
-    category: "Bead Bags",
-    description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
-    inStock: true
-},
-{
-    id: 18,
-    slug: "Transparent-Bag",
-    name: "Transparent Bag",
-    price: 3000,
-    image: "images/product_18.jpeg",
-    category: "Bead Bags",
-    description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
-    inStock: true
-}
 ];
 
 // Function to get product by ID
