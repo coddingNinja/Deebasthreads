@@ -135,7 +135,7 @@ const products = [
         slug: "Two-Shades-Crystal-Bag-shape-potli-bag",
         name: " Two Shades Crystal Bag shape potli bag ",
         price: 3000,
-        image: "images/product_14.png",
+        image: "images/product_14.jpeg",
         category: "Bead Bags",
         description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
         inStock: true
