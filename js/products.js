@@ -146,7 +146,7 @@ const products = [
     slug: "Off-White-Big-Bead-Bag",
     name: "OffWhite Big Bead Bag ",
     price: 3000,
-    image: "images/product_15.png",
+    image: "images/product_15.jpeg",
     category: "Bead Bags",
     description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
     inStock: true
@@ -156,7 +156,7 @@ const products = [
     slug: "Off-White-Big-Bead-Bag-premimum",
     name: "OffWhite Big Bead Bag ",
     price: 3000,
-    image: "images/product_6.png",
+    image: "images/product_16.jpeg",
     category: "Bead Bags",
     description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
     inStock: true
