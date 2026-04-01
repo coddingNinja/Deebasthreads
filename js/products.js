@@ -137,7 +137,7 @@ const products = [
         price: 3000,
         image: "images/product_14.jpeg",
         category: "Bead Bags",
-        description: "An elegant two-shade crystal bead potli bag that adds a touch of glamour to any outfit. Perfect for weddings and festive occasions.",
+        description: "An elegant two-shade crystal bead  bag that adds a touch of glamour to any outfit. Perfect for weddings and festive occasions.",
         inStock: true
     },
     {
