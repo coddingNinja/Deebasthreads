@@ -160,6 +160,26 @@ const products = [
     category: "Bead Bags",
     description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
     inStock: true
+},
+{
+    id: 17,
+    slug: "Multi-Design-Bag ",
+    name: "Multi Design Bag ",
+    price: 3000,
+    image: "images/product_17.jpeg",
+    category: "Bead Bags",
+    description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
+    inStock: true
+},
+{
+    id: 18,
+    slug: "Transparent-Bag",
+    name: "Transparent Bag",
+    price: 3000,
+    image: "images/product_16.jpeg",
+    category: "Bead Bags",
+    description: "A cute handmade heart-shaped potli bead bag designed for special moments. Lightweight, stylish, and perfect for festive looks.",
+    inStock: true
 }
 ];
 
